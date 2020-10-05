@@ -52,6 +52,29 @@ img {
 
 strong {font-weight: var(--fw-bold)}
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    border-radius: 50%;
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover {
+    transform: (scale 1.1);
+}
 /*Typography*/
 h1,
 h2,
@@ -73,6 +96,7 @@ h3 {font-size: var(--fs-h3) }
 
 .section__subtitle--intro {
     font-weight: var(--fw-reg);
+    /*border-radius: 40%;*/
 }
 
 .section__subtitle {
