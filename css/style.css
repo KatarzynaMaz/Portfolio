@@ -115,6 +115,12 @@ h3 {font-size: var(--fs-h3) }
 
 }
 
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
 nav {
     display: none;
 }
@@ -243,3 +249,35 @@ nav {
             grid-area: text;
         }
     }
+
+    /*My Work*/
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+} 
+
+.portfolio {
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+    background-color: var(--clr-accent);
+}
+
+.portfolio__img {
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+    opacity 250ms linear;
+}
+
+.portfolio__item :focus {
+    position: relative;
+    z-index: 2;
+}
+/*if portfolio item comes to focus, we want the portfolio img to change */
+.portfolio__img:hover 
+.portfolio__item :focus .portfolio__img{
+    transform: scale(1.2);
+    opacity: .5;
+}
