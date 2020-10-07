@@ -210,24 +210,36 @@ nav {
         .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas:
+        grid-template-areas: 
         "title img"
         "subtitle img"
         "text img";
-        grid-column-gap: 2em;       
-    }
-  /*
-    .section__title--about {
-        grid-area: title;
-    }
- 
-    .about-me__img {
-        grid-area: img;
-    }
-   
-    .section__subtitle--about {
-        grid-column: 1/-1;
-        grid-row: 2;
-    }*/
+        grid-column-gap: 2em;
+        }
+        
+        .section__title--about {
+            grid-area: title;
+        }
+        .section__subtitle--about {
+            grid-column: 1/-1;
+            grid-row: 2;
+            /*grid-area: subtitle;*/
+            position: relative;
+            left: -1em;
+            width: calc(100% + 2em);
+            padding-left: 1em;
+            padding-right: calc(200px + 4em);
+        }
 
-}
+        .about-me__img {
+            grid-area: img;
+            grid-row: 1/-1;
+            position: relative;
+            z-index: 2;
+            border-radius: 50%;
+        }
+
+        .about-me__body {
+            grid-area: text;
+        }
+    }
