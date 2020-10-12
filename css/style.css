@@ -18,7 +18,7 @@
 
     --fs-h1: 3rem;
     --fs-h2: 2.25 rem;
-    --fs-h1: 1.25 rem;
+    --fs-h3: 1.25 rem;
     --fs-body: 1 rem;
 }
 
@@ -280,4 +280,47 @@ nav {
 .portfolio__item :focus .portfolio__img{
     transform: scale(1.2);
     opacity: .5;
+}
+
+/*footer*/
+.footer {
+    background-color: #111111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link {
+    opacity: 0.7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
 }
