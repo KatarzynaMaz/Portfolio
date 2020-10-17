@@ -158,18 +158,33 @@ nav {
     color: var(--clr-accent);
     }
 
-.nav_toogle {
+    /*very high z-index to make sure that the button is seen when the nav bar is open*/
+.nav-toggle {
     padding: 0.5em;
-    /*background: transparent;*/
-    
-    border: 2px solid red;
+    background: transparent;
+    border: 0;
     cursor: pointer;
     position: absolute;
-    /*right: 1em;
-    top: 1em;*/
-    z-index: -1;
+    right: 1em;
+    top: 1em;
+    z-index: 1000
 }
 
+.nav-open .nav {
+    transform: translateX(0);
+}  
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px)
+}
 .hamburger {
     display: block;
     position: relative;
@@ -194,8 +209,12 @@ nav {
     
 }
 
-/*.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }*/
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+.nav-open {
+    background: red;
+}
 
 header {
     display: flex;
