@@ -32,6 +32,10 @@
 }
 
 /*General styles*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -185,6 +189,11 @@ nav {
 .nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px)
 }
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
 .hamburger {
     display: block;
     position: relative;
@@ -212,9 +221,9 @@ nav {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-.nav-open {
+/*.nav-open {
     background: red;
-}
+}*/
 
 header {
     display: flex;
