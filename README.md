@@ -8,3 +8,7 @@ This is my portfolio page which will show some of my projects.
 
 ## Pull requests
 This is a personal project and pull requests will not be accepted. 
+
+## Acknowledgements
+
+Thank you to [Kevin Powell](https://www.kevinpowell.co/) for creating a walkthough on how to create a portfolio site.
