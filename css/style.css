@@ -368,11 +368,12 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: (auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
     background-color: var(--clr-accent);
+    text-decoration: none;
 }
 
 .portfolio__img {
