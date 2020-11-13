@@ -83,7 +83,7 @@ strong {font-weight: var(--fw-bold)}
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
 }
 
 h1 {font-size: var(--fs-h1) }
@@ -235,7 +235,7 @@ header {
 }
 
 /*intro*/
-.into { 
+.intro { 
     position: relative;
 }
 
